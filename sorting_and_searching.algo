@@ -1,0 +1,17 @@
+ALGORITHM Insertion_sort
+VAR
+    arr: ARRAY_OF INTEGER[50];
+    i,j,v: INTEGER;
+BEGIN
+    FOR i FROM 1 TO arr.length-1 STEP 1 DO
+        v := arr[i];
+        j:=i-1
+    
+    WHILE (arr[j] > v && j>=0 && j>0) DO
+        arr[j+1] := arr[j];
+        arr[j] := v;
+        j:=j-1
+    END_WHILE
+    END_FOR
+    
+END
